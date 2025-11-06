@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import dataframe_image as dfi
 import json
 import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt
@@ -132,7 +133,7 @@ def create_styled_table(
         table.style.background_gradient(cmap="Greens").format("{:.2f}").map(hide_nan)
     )
 
-    return styled
+    return table, styled
 
 
 def generate_report(table_absolute, table_normalized) -> str:
@@ -182,8 +183,16 @@ def main():
     df = compute_metrics(df)
 
     # Create styled tables
-    table_absolute = create_styled_table(df, "max_tops", ROW_ORDER)
-    table_normalized = create_styled_table(df, "normalized_ops", ROW_ORDER)
+    table_absolute, table_absolute_styled = create_styled_table(
+        df, "max_tops", ROW_ORDER
+    )
+    table_normalized, table_normalized_styled = create_styled_table(
+        df, "normalized_ops", ROW_ORDER
+    )
+
+    # Export styled tables as images
+    dfi.export(table_absolute_styled, "performance_absolute.png")
+    dfi.export(table_normalized_styled, "performance_normalized.png")
 
     # Generate and save report
     report_content = generate_report(table_absolute, table_normalized)
