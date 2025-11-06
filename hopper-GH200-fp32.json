@@ -1,0 +1,5 @@
+[
+{"device_number": 0, "device_name": "NVIDIA GH200 480GB", "architecture": "sm_90", "multi_processor_count": 132, "clock_rate": 1.98},
+{"name": "fp32", "runtime": 107.634, "tops": 42.1379, "frequency": 1350},
+{"name": "fp32", "runtime": 107.554, "tops": 42.1695, "frequency": 1350},
+{"name": "fp32", "runtime": 107.545, "tops": 42.1727, "frequency": 1350}]
