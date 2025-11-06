@@ -148,12 +148,22 @@ The benchmarks evaluate synthetic workloads designed to measure peak operations 
 ## Absolute Performance
 Measured in teraoperations per second (TOPs), showing raw computational throughput for various data types and MMA sizes.
 
+![Absolute Performance](performance_absolute.png)
+
+<details>
+<summary><b>📊 Data Table</b></summary>
 {table_absolute.to_html()}
+</details>
 
 ## Normalized Performance  
 Scaled relative to each GPU's slowest individual benchmark result, revealing how performance scales across different data types.
 
+![Normalized Performance](performance_normalized.png)
+
+<details>
+<summary><b>📊 Data Table</b></summary>
 {table_normalized.to_html()}
+</details>
 
 *Report generated on {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M UTC')}*
 """

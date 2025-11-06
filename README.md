@@ -8,6 +8,10 @@ The benchmarks evaluate synthetic workloads designed to measure peak operations 
 ## Absolute Performance
 Measured in teraoperations per second (TOPs), showing raw computational throughput for various data types and MMA sizes.
 
+![Absolute Performance](performance_absolute.png)
+
+<details>
+<summary><b>📊 Data Table</b></summary>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -201,10 +205,15 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
     </tr>
   </tbody>
 </table>
+</details>
 
 ## Normalized Performance  
 Scaled relative to each GPU's slowest individual benchmark result, revealing how performance scales across different data types.
 
+![Normalized Performance](performance_normalized.png)
+
+<details>
+<summary><b>📊 Data Table</b></summary>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -398,5 +407,6 @@ Scaled relative to each GPU's slowest individual benchmark result, revealing how
     </tr>
   </tbody>
 </table>
+</details>
 
-*Report generated on 2025-11-06 15:21 UTC*
+*Report generated on 2025-11-06 15:26 UTC*
