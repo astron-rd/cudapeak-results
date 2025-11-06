@@ -1,0 +1,6 @@
+[
+{"device_number": 0, "device_name": "NVIDIA A100-PCIE-40GB", "architecture": "sm_80", "multi_processor_count": 108, "clock_rate": 1.41},
+{"name": "fp32", "runtime": 196.059, "tops": 18.9272, "frequency": 1410},
+{"name": "fp32", "runtime": 196.371, "tops": 18.8971, "frequency": 1410},
+{"name": "fp32", "runtime": 196.348, "tops": 18.8993, "frequency": 1410}
+]

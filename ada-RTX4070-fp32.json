@@ -1,0 +1,6 @@
+[
+{"device_number": 0, "device_name": "NVIDIA GeForce RTX 4070", "architecture": "sm_89", "multi_processor_count": 46, "clock_rate": 2.475},
+{"name": "fp32", "runtime": 70.75, "tops": 22.3399, "frequency": 1920},
+{"name": "fp32", "runtime": 70.7502, "tops": 22.3398, "frequency": 1920},
+{"name": "fp32", "runtime": 70.75, "tops": 22.3399, "frequency": 1920}
+]

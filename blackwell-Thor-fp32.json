@@ -1,0 +1,6 @@
+[
+{"device_number": 0, "device_name": "NVIDIA Thor", "architecture": "sm_110", "multi_processor_count": 20, "clock_rate": 1.04858},
+{"name": "fp32", "runtime": 98.9905, "tops": 6.94203},
+{"name": "fp32", "runtime": 97.9009, "tops": 7.01929},
+{"name": "fp32", "runtime": 97.9205, "tops": 7.01788}
+]

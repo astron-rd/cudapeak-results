@@ -1,0 +1,6 @@
+[
+{"device_number": 0, "device_name": "NVIDIA RTX A4000", "architecture": "sm_86", "multi_processor_count": 48, "clock_rate": 1.56},
+{"name": "fp32", "runtime": 184.91, "tops": 8.91931, "frequency": 735},
+{"name": "fp32", "runtime": 184.908, "tops": 8.91939, "frequency": 735},
+{"name": "fp32", "runtime": 184.909, "tops": 8.91933, "frequency": 735}
+]

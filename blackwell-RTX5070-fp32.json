@@ -1,0 +1,6 @@
+[
+{"device_number": 0, "device_name": "NVIDIA GeForce RTX 5070", "architecture": "sm_120", "multi_processor_count": 48, "clock_rate": 2.512},
+{"name": "fp32", "runtime": 58.0194, "tops": 28.4261, "frequency": 2317},
+{"name": "fp32", "runtime": 58.0169, "tops": 28.4274, "frequency": 2317},
+{"name": "fp32", "runtime": 58.0204, "tops": 28.4256, "frequency": 2317}
+]

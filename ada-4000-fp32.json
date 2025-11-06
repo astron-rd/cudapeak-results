@@ -1,0 +1,6 @@
+[
+{"device_number": 0, "device_name": "NVIDIA RTX 4000 Ada Generation", "architecture": "sm_89", "multi_processor_count": 48, "clock_rate": 2.175},
+{"name": "fp32", "runtime": 90.5615, "tops": 18.2116, "frequency": 1500},
+{"name": "fp32", "runtime": 90.5606, "tops": 18.2118, "frequency": 1500},
+{"name": "fp32", "runtime": 90.5608, "tops": 18.2117, "frequency": 1500}
+]
