@@ -5,13 +5,13 @@ This auto-generated report presents benchmark results for the [cudapeak](https:/
 
 The benchmarks evaluate synthetic workloads designed to measure peak operations per second (OPs), providing insights into architectural efficiency and computational limits.
 
-## Absolute Performance
+## Absolute performance
 Measured in teraoperations per second (TOPs), showing raw computational throughput for various data types and MMA sizes.
 
-![Absolute Performance](performance_absolute.png)
+![Absolute performance](performance.png)
 
 <details>
-<summary><b>📊 Data Table</b></summary>
+<summary><b>📊 Data table</b></summary>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -207,13 +207,13 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
 </table>
 </details>
 
-## Normalized Performance  
-Scaled relative to each GPU's slowest individual benchmark result, revealing how performance scales across different data types.
+## Operations per cycle
+Operations per cycle, showing how performance scales across different data types.
 
-![Normalized Performance](performance_normalized.png)
+![Operations per cycle](ops_per_cycle.png)
 
 <details>
-<summary><b>📊 Data Table</b></summary>
+<summary><b>📊 Data table</b></summary>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -242,171 +242,171 @@ Scaled relative to each GPU's slowest individual benchmark result, revealing how
   <tbody>
     <tr>
       <th>fp32</th>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.994289</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
+      <td>0.334705</td>
+      <td>0.252817</td>
+      <td>0.125212</td>
+      <td>0.252942</td>
+      <td>0.252943</td>
+      <td>0.255605</td>
+      <td>0.252937</td>
+      <td>0.255822</td>
     </tr>
     <tr>
       <th>mma_tf32_16_16_8</th>
-      <td>2.020475</td>
-      <td>2.002222</td>
-      <td>7.862407</td>
-      <td>2.001164</td>
-      <td>1.011007</td>
-      <td>1.000000</td>
-      <td>2.001280</td>
-      <td>1.005101</td>
+      <td>173.123119</td>
+      <td>129.586213</td>
+      <td>252.023355</td>
+      <td>129.581511</td>
+      <td>65.466087</td>
+      <td>32.811164</td>
+      <td>129.586535</td>
+      <td>65.824612</td>
     </tr>
     <tr>
       <th>mma_bf16_16_16_16</th>
-      <td>8.036838</td>
-      <td>3.972996</td>
-      <td>15.149638</td>
-      <td>3.970607</td>
-      <td>2.019624</td>
-      <td>3.999249</td>
-      <td>3.970672</td>
-      <td>4.016970</td>
+      <td>688.631406</td>
+      <td>257.137052</td>
+      <td>485.609877</td>
+      <td>257.108978</td>
+      <td>130.777391</td>
+      <td>131.220026</td>
+      <td>257.108225</td>
+      <td>263.073621</td>
     </tr>
     <tr>
       <th>mma_f16_16_16_16</th>
-      <td>8.069149</td>
-      <td>4.047093</td>
-      <td>16.200580</td>
-      <td>4.046058</td>
-      <td>2.023599</td>
-      <td>3.999123</td>
-      <td>4.046149</td>
-      <td>4.017391</td>
+      <td>691.39995</td>
+      <td>261.932698</td>
+      <td>519.297023</td>
+      <td>261.994667</td>
+      <td>131.034783</td>
+      <td>131.215883</td>
+      <td>261.995498</td>
+      <td>263.101165</td>
     </tr>
     <tr>
       <th>mma_e4m3_16_8_32</th>
-      <td>24.402753</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>8.083276</td>
-      <td>4.043845</td>
-      <td>7.994374</td>
-      <td>8.083398</td>
-      <td>8.010940</td>
+      <td>1045.467203</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>261.708444</td>
+      <td>130.926232</td>
+      <td>131.152352</td>
+      <td>261.707359</td>
+      <td>262.320467</td>
     </tr>
     <tr>
       <th>mma_e5m2_16_8_32</th>
-      <td>24.402041</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>8.083276</td>
-      <td>4.043841</td>
-      <td>7.994304</td>
-      <td>8.083398</td>
-      <td>8.010875</td>
+      <td>1045.436686</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>261.708444</td>
+      <td>130.926087</td>
+      <td>131.151201</td>
+      <td>261.707359</td>
+      <td>262.318315</td>
     </tr>
     <tr>
       <th>mma_s8_16_8_32</th>
-      <td>16.069432</td>
-      <td>8.098749</td>
-      <td>32.458192</td>
-      <td>8.090798</td>
-      <td>8.094889</td>
-      <td>15.967701</td>
-      <td>8.090928</td>
-      <td>8.025319</td>
+      <td>688.449522</td>
+      <td>262.080363</td>
+      <td>520.211087</td>
+      <td>261.952</td>
+      <td>262.085507</td>
+      <td>261.95943</td>
+      <td>261.951169</td>
+      <td>262.791296</td>
     </tr>
     <tr>
       <th>mma_s8_16_16_16</th>
-      <td>8.084863</td>
-      <td>8.076416</td>
-      <td>32.422040</td>
-      <td>8.072459</td>
-      <td>8.072373</td>
-      <td>7.998443</td>
-      <td>8.072581</td>
-      <td>4.019809</td>
+      <td>692.746381</td>
+      <td>522.715283</td>
+      <td>1039.263326</td>
+      <td>522.716444</td>
+      <td>522.713043</td>
+      <td>262.43821</td>
+      <td>522.71432</td>
+      <td>263.259542</td>
     </tr>
     <tr>
       <th>mma_e2m1_16_8_64</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>31.724941</td>
-      <td>0.000000</td>
-      <td>16.006161</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>520.46612</td>
+      <td>0.0</td>
+      <td>524.126207</td>
     </tr>
     <tr>
       <th>mma_e3m2_16_8_32</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>7.994444</td>
-      <td>0.000000</td>
-      <td>8.011019</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>131.153503</td>
+      <td>0.0</td>
+      <td>262.323049</td>
     </tr>
     <tr>
       <th>mma_s4_8_8_32</th>
-      <td>1.006988</td>
-      <td>16.032823</td>
-      <td>32.369937</td>
-      <td>16.024775</td>
-      <td>16.024781</td>
-      <td>2.055639</td>
-      <td>16.025049</td>
-      <td>1.030102</td>
+      <td>21.57078</td>
+      <td>259.415873</td>
+      <td>259.398305</td>
+      <td>259.413333</td>
+      <td>259.414493</td>
+      <td>16.861977</td>
+      <td>259.412779</td>
+      <td>16.865481</td>
     </tr>
     <tr>
       <th>bmma_b1_8_8_128_and</th>
-      <td>4.439794</td>
-      <td>62.666393</td>
-      <td>126.529725</td>
-      <td>62.637411</td>
-      <td>62.637254</td>
-      <td>6.952653</td>
-      <td>62.637690</td>
-      <td>3.493679</td>
+      <td>95.105228</td>
+      <td>1013.960998</td>
+      <td>1013.953038</td>
+      <td>1013.991111</td>
+      <td>1013.992754</td>
+      <td>57.031161</td>
+      <td>1013.976104</td>
+      <td>57.200742</td>
     </tr>
     <tr>
       <th>bmma_b1_8_8_128_xor</th>
-      <td>1.694844</td>
-      <td>64.131179</td>
-      <td>129.480909</td>
-      <td>64.099650</td>
-      <td>64.099213</td>
-      <td>3.090723</td>
-      <td>64.099650</td>
-      <td>1.553761</td>
+      <td>36.305403</td>
+      <td>1037.661678</td>
+      <td>1037.602518</td>
+      <td>1037.662222</td>
+      <td>1037.65942</td>
+      <td>25.352554</td>
+      <td>1037.642251</td>
+      <td>25.439169</td>
     </tr>
     <tr>
       <th>bmma_b1_16_8_256_and</th>
-      <td>10.142821</td>
-      <td>64.790305</td>
-      <td>259.666506</td>
-      <td>64.726716</td>
-      <td>64.758571</td>
-      <td>15.027921</td>
-      <td>64.727427</td>
-      <td>7.376406</td>
+      <td>434.540579</td>
+      <td>2096.653061</td>
+      <td>4161.704188</td>
+      <td>2095.626667</td>
+      <td>2096.666667</td>
+      <td>246.541793</td>
+      <td>2095.609351</td>
+      <td>241.542459</td>
     </tr>
     <tr>
       <th>bmma_b1_16_8_256_xor</th>
-      <td>2.961496</td>
-      <td>64.790305</td>
-      <td>259.665539</td>
-      <td>64.726716</td>
-      <td>64.758571</td>
-      <td>5.328572</td>
-      <td>64.727769</td>
-      <td>2.676377</td>
+      <td>126.876957</td>
+      <td>2096.653061</td>
+      <td>4161.688695</td>
+      <td>2095.626667</td>
+      <td>2096.666667</td>
+      <td>87.418328</td>
+      <td>2095.620433</td>
+      <td>87.638701</td>
     </tr>
   </tbody>
 </table>
 </details>
 
-*Report generated on 2025-11-06 15:29 UTC*
+*Report generated on 2025-11-06 16:54 UTC*

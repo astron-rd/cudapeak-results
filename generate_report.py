@@ -89,7 +89,7 @@ def parse_file(filename: str) -> Optional[pd.DataFrame]:
 
 
 def compute_metrics(df: pd.DataFrame) -> pd.DataFrame:
-    """Compute derived metrics like OPs per cycle and normalized performance."""
+    """Compute derived metrics like OPs per cycle."""
     df = df.copy()
 
     # Fallback to max_frequency if frequency is NaN
@@ -98,13 +98,15 @@ def compute_metrics(df: pd.DataFrame) -> pd.DataFrame:
     # Compute operations per cycle
     df["ops_per_cycle"] = df.tops / (df.mp_count * df.frequency * 1e-3)
 
+    # Multiply by actual number of operations
+    df[["n", "m", "k"]] = (
+        df["name"].str.extract(r"mma_\w+_(\d+)_(\d+)_(\d+)").astype("Int64")
+    )
+    df["ops"] = df[["n", "m"]].product(axis=1)
+    df["ops_per_cycle"] = df["ops_per_cycle"] * df["ops"]
+
     # Scale measured TOPS to max frequency
     df["max_tops"] = df.tops / df.frequency * df.max_frequency
-
-    # Normalize by slowest benchmark per GPU
-    df["normalized_ops"] = df["ops_per_cycle"] / df.groupby("gpu")[
-        "ops_per_cycle"
-    ].transform(lambda x: x.min())
 
     return df
 
@@ -140,7 +142,7 @@ def create_styled_table(
     return table, styled, column_order
 
 
-def generate_report(table_absolute, table_normalized) -> str:
+def generate_report(table_absolute, table_ops) -> str:
     """Generate the markdown report content."""
     return f"""
 # CUDA Peak Performance Report
@@ -149,24 +151,24 @@ This auto-generated report presents benchmark results for the [cudapeak](https:/
 
 The benchmarks evaluate synthetic workloads designed to measure peak operations per second (OPs), providing insights into architectural efficiency and computational limits.
 
-## Absolute Performance
+## Absolute performance
 Measured in teraoperations per second (TOPs), showing raw computational throughput for various data types and MMA sizes.
 
-![Absolute Performance](performance_absolute.png)
+![Absolute performance](performance.png)
 
 <details>
-<summary><b>📊 Data Table</b></summary>
+<summary><b>📊 Data table</b></summary>
 {table_absolute.to_html()}
 </details>
 
-## Normalized Performance  
-Scaled relative to each GPU's slowest individual benchmark result, revealing how performance scales across different data types.
+## Operations per cycle
+Operations per cycle, showing how performance scales across different data types.
 
-![Normalized Performance](performance_normalized.png)
+![Operations per cycle](ops_per_cycle.png)
 
 <details>
-<summary><b>📊 Data Table</b></summary>
-{table_normalized.to_html()}
+<summary><b>📊 Data table</b></summary>
+{table_ops.to_html()}
 </details>
 
 *Report generated on {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M UTC')}*
@@ -197,19 +199,19 @@ def main():
     df = compute_metrics(df)
 
     # Create styled tables
-    table_absolute, table_absolute_styled, column_order = create_styled_table(
+    table_performance, table_performance_styled, column_order = create_styled_table(
         df, "max_tops", ROW_ORDER
     )
-    table_normalized, table_normalized_styled, _ = create_styled_table(
-        df, "normalized_ops", ROW_ORDER, column_order
+    table_ops, table_ops_styled, _ = create_styled_table(
+        df, "ops_per_cycle", ROW_ORDER, column_order
     )
 
     # Export styled tables as images
-    dfi.export(table_absolute_styled, "performance_absolute.png")
-    dfi.export(table_normalized_styled, "performance_normalized.png")
+    dfi.export(table_performance_styled, "performance.png")
+    dfi.export(table_ops_styled, "ops_per_cycle.png")
 
     # Generate and save report
-    report_content = generate_report(table_absolute, table_normalized)
+    report_content = generate_report(table_performance, table_ops)
 
     with open("README.md", "w") as f:
         f.write(report_content)
