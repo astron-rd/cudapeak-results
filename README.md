@@ -218,14 +218,14 @@ Scaled relative to each GPU's slowest individual benchmark result, revealing how
   <thead>
     <tr style="text-align: right;">
       <th>gpu</th>
-      <th>Ada 4000</th>
-      <th>Ada 5000</th>
-      <th>Ada RTX4070</th>
-      <th>Ampere A100</th>
-      <th>Ampere A4000</th>
-      <th>Blackwell 6000</th>
       <th>Blackwell Thor</th>
+      <th>Ampere A4000</th>
+      <th>Ampere A100</th>
+      <th>Ada 4000</th>
+      <th>Ada RTX4070</th>
       <th>Blackwell RTX5070</th>
+      <th>Ada 5000</th>
+      <th>Blackwell 6000</th>
     </tr>
     <tr>
       <th>name</th>
@@ -247,86 +247,86 @@ Scaled relative to each GPU's slowest individual benchmark result, revealing how
       <td>1.000000</td>
       <td>1.000000</td>
       <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
       <td>1.994289</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>mma_tf32_16_16_8</th>
-      <td>2.001164</td>
-      <td>2.001280</td>
-      <td>1.011007</td>
-      <td>7.862407</td>
-      <td>2.002222</td>
-      <td>1.005101</td>
       <td>2.020475</td>
+      <td>2.002222</td>
+      <td>7.862407</td>
+      <td>2.001164</td>
+      <td>1.011007</td>
       <td>1.000000</td>
+      <td>2.001280</td>
+      <td>1.005101</td>
     </tr>
     <tr>
       <th>mma_bf16_16_16_16</th>
-      <td>3.970607</td>
-      <td>3.970672</td>
-      <td>2.019624</td>
-      <td>15.149638</td>
-      <td>3.972996</td>
-      <td>4.016970</td>
       <td>8.036838</td>
+      <td>3.972996</td>
+      <td>15.149638</td>
+      <td>3.970607</td>
+      <td>2.019624</td>
       <td>3.999249</td>
+      <td>3.970672</td>
+      <td>4.016970</td>
     </tr>
     <tr>
       <th>mma_f16_16_16_16</th>
-      <td>4.046058</td>
-      <td>4.046149</td>
-      <td>2.023599</td>
-      <td>16.200580</td>
-      <td>4.047093</td>
-      <td>4.017391</td>
       <td>8.069149</td>
+      <td>4.047093</td>
+      <td>16.200580</td>
+      <td>4.046058</td>
+      <td>2.023599</td>
       <td>3.999123</td>
+      <td>4.046149</td>
+      <td>4.017391</td>
     </tr>
     <tr>
       <th>mma_e4m3_16_8_32</th>
-      <td>8.083276</td>
-      <td>8.083398</td>
-      <td>4.043845</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>8.010940</td>
       <td>24.402753</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>8.083276</td>
+      <td>4.043845</td>
       <td>7.994374</td>
+      <td>8.083398</td>
+      <td>8.010940</td>
     </tr>
     <tr>
       <th>mma_e5m2_16_8_32</th>
-      <td>8.083276</td>
-      <td>8.083398</td>
-      <td>4.043841</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>8.010875</td>
       <td>24.402041</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>8.083276</td>
+      <td>4.043841</td>
       <td>7.994304</td>
+      <td>8.083398</td>
+      <td>8.010875</td>
     </tr>
     <tr>
       <th>mma_s8_16_8_32</th>
-      <td>8.090798</td>
-      <td>8.090928</td>
-      <td>8.094889</td>
-      <td>32.458192</td>
-      <td>8.098749</td>
-      <td>8.025319</td>
       <td>16.069432</td>
+      <td>8.098749</td>
+      <td>32.458192</td>
+      <td>8.090798</td>
+      <td>8.094889</td>
       <td>15.967701</td>
+      <td>8.090928</td>
+      <td>8.025319</td>
     </tr>
     <tr>
       <th>mma_s8_16_16_16</th>
-      <td>8.072459</td>
-      <td>8.072581</td>
-      <td>8.072373</td>
-      <td>32.422040</td>
-      <td>8.076416</td>
-      <td>4.019809</td>
       <td>8.084863</td>
+      <td>8.076416</td>
+      <td>32.422040</td>
+      <td>8.072459</td>
+      <td>8.072373</td>
       <td>7.998443</td>
+      <td>8.072581</td>
+      <td>4.019809</td>
     </tr>
     <tr>
       <th>mma_e2m1_16_8_64</th>
@@ -335,9 +335,9 @@ Scaled relative to each GPU's slowest individual benchmark result, revealing how
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>16.006161</td>
-      <td>0.000000</td>
       <td>31.724941</td>
+      <td>0.000000</td>
+      <td>16.006161</td>
     </tr>
     <tr>
       <th>mma_e3m2_16_8_32</th>
@@ -346,67 +346,67 @@ Scaled relative to each GPU's slowest individual benchmark result, revealing how
       <td>0.000000</td>
       <td>0.000000</td>
       <td>0.000000</td>
-      <td>8.011019</td>
-      <td>0.000000</td>
       <td>7.994444</td>
+      <td>0.000000</td>
+      <td>8.011019</td>
     </tr>
     <tr>
       <th>mma_s4_8_8_32</th>
-      <td>16.024775</td>
-      <td>16.025049</td>
-      <td>16.024781</td>
-      <td>32.369937</td>
-      <td>16.032823</td>
-      <td>1.030102</td>
       <td>1.006988</td>
+      <td>16.032823</td>
+      <td>32.369937</td>
+      <td>16.024775</td>
+      <td>16.024781</td>
       <td>2.055639</td>
+      <td>16.025049</td>
+      <td>1.030102</td>
     </tr>
     <tr>
       <th>bmma_b1_8_8_128_and</th>
-      <td>62.637411</td>
-      <td>62.637690</td>
-      <td>62.637254</td>
-      <td>126.529725</td>
-      <td>62.666393</td>
-      <td>3.493679</td>
       <td>4.439794</td>
+      <td>62.666393</td>
+      <td>126.529725</td>
+      <td>62.637411</td>
+      <td>62.637254</td>
       <td>6.952653</td>
+      <td>62.637690</td>
+      <td>3.493679</td>
     </tr>
     <tr>
       <th>bmma_b1_8_8_128_xor</th>
-      <td>64.099650</td>
+      <td>1.694844</td>
+      <td>64.131179</td>
+      <td>129.480909</td>
       <td>64.099650</td>
       <td>64.099213</td>
-      <td>129.480909</td>
-      <td>64.131179</td>
-      <td>1.553761</td>
-      <td>1.694844</td>
       <td>3.090723</td>
+      <td>64.099650</td>
+      <td>1.553761</td>
     </tr>
     <tr>
       <th>bmma_b1_16_8_256_and</th>
-      <td>64.726716</td>
-      <td>64.727427</td>
-      <td>64.758571</td>
-      <td>259.666506</td>
-      <td>64.790305</td>
-      <td>7.376406</td>
       <td>10.142821</td>
+      <td>64.790305</td>
+      <td>259.666506</td>
+      <td>64.726716</td>
+      <td>64.758571</td>
       <td>15.027921</td>
+      <td>64.727427</td>
+      <td>7.376406</td>
     </tr>
     <tr>
       <th>bmma_b1_16_8_256_xor</th>
-      <td>64.726716</td>
-      <td>64.727769</td>
-      <td>64.758571</td>
-      <td>259.665539</td>
-      <td>64.790305</td>
-      <td>2.676377</td>
       <td>2.961496</td>
+      <td>64.790305</td>
+      <td>259.665539</td>
+      <td>64.726716</td>
+      <td>64.758571</td>
       <td>5.328572</td>
+      <td>64.727769</td>
+      <td>2.676377</td>
     </tr>
   </tbody>
 </table>
 </details>
 
-*Report generated on 2025-11-06 15:26 UTC*
+*Report generated on 2025-11-06 15:29 UTC*

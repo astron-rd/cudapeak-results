@@ -110,7 +110,10 @@ def compute_metrics(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def create_styled_table(
-    df: pd.DataFrame, value_col: str, row_order: List[str]
+    df: pd.DataFrame,
+    value_col: str,
+    row_order: List[str],
+    column_order: Optional[List[str]] = None,
 ) -> pd.DataFrame:
     """Create a styled table with consistent formatting."""
     # Create pivot table
@@ -121,7 +124,8 @@ def create_styled_table(
     )
 
     # Sort columns by first row values
-    column_order = table.iloc[0].sort_values(ascending=True).index
+    if column_order is None:
+        column_order = table.iloc[0].sort_values(ascending=True).index
     table = table[column_order]
 
     # Style function for hiding zeros
@@ -133,7 +137,7 @@ def create_styled_table(
         table.style.background_gradient(cmap="Greens").format("{:.2f}").map(hide_nan)
     )
 
-    return table, styled
+    return table, styled, column_order
 
 
 def generate_report(table_absolute, table_normalized) -> str:
@@ -193,11 +197,11 @@ def main():
     df = compute_metrics(df)
 
     # Create styled tables
-    table_absolute, table_absolute_styled = create_styled_table(
+    table_absolute, table_absolute_styled, column_order = create_styled_table(
         df, "max_tops", ROW_ORDER
     )
-    table_normalized, table_normalized_styled = create_styled_table(
-        df, "normalized_ops", ROW_ORDER
+    table_normalized, table_normalized_styled, _ = create_styled_table(
+        df, "normalized_ops", ROW_ORDER, column_order
     )
 
     # Export styled tables as images
