@@ -1,0 +1,6 @@
+[
+{"device_number": 0, "device_name": "NVIDIA RTX PRO 4000 Blackwell", "architecture": "sm_120", "multi_processor_count": 70, "clock_rate": 2.055},
+{"name": "fp32", "runtime": 62.1429, "tops": 38.704},
+{"name": "fp32", "runtime": 63.7866, "tops": 37.7067},
+{"name": "fp32", "runtime": 64.258, "tops": 37.43}
+]
