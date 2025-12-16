@@ -1,0 +1,6 @@
+[
+{"device_number": 2, "device_name": "NVIDIA L40S", "architecture": "sm_89", "multi_processor_count": 142, "clock_rate": 2.52},
+{"name": "fp32", "runtime": 61.4675, "tops": 79.3766},
+{"name": "fp32", "runtime": 62.4177, "tops": 78.1682},
+{"name": "fp32", "runtime": 61.8114, "tops": 78.9351}
+]

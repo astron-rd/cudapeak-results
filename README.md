@@ -25,10 +25,12 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <th>Blackwell 4000</th>
       <th>Hopper GH200</th>
       <th>Ada 5000</th>
+      <th>Ada L40S</th>
       <th>Blackwell 6000</th>
     </tr>
     <tr>
       <th>name</th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -53,6 +55,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>38.7040</td>
       <td>61.853293</td>
       <td>64.498883</td>
+      <td>79.3428</td>
       <td>109.655750</td>
     </tr>
     <tr>
@@ -66,6 +69,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>46.8450</td>
       <td>266.736800</td>
       <td>129.080338</td>
+      <td>181.1360</td>
       <td>110.215085</td>
     </tr>
     <tr>
@@ -79,6 +83,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>187.0130</td>
       <td>704.198000</td>
       <td>256.103896</td>
+      <td>359.4260</td>
       <td>440.483894</td>
     </tr>
     <tr>
@@ -92,6 +97,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>187.0590</td>
       <td>710.275867</td>
       <td>260.972078</td>
+      <td>366.1300</td>
       <td>440.530013</td>
     </tr>
     <tr>
@@ -105,6 +111,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>372.8190</td>
       <td>1612.101333</td>
       <td>521.370130</td>
+      <td>732.0090</td>
       <td>878.445664</td>
     </tr>
     <tr>
@@ -118,6 +125,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>372.8780</td>
       <td>1612.116000</td>
       <td>521.370130</td>
+      <td>732.0150</td>
       <td>878.438458</td>
     </tr>
     <tr>
@@ -131,6 +139,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>374.0010</td>
       <td>1401.265067</td>
       <td>521.855844</td>
+      <td>732.6910</td>
       <td>880.022351</td>
     </tr>
     <tr>
@@ -144,6 +153,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>187.4380</td>
       <td>1058.547600</td>
       <td>520.672468</td>
+      <td>730.6400</td>
       <td>440.795196</td>
     </tr>
     <tr>
@@ -157,6 +167,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>744.9430</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>0.0000</td>
       <td>1755.167636</td>
     </tr>
     <tr>
@@ -170,6 +181,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>372.9740</td>
       <td>0.000000</td>
       <td>0.000000</td>
+      <td>0.0000</td>
       <td>878.454311</td>
     </tr>
     <tr>
@@ -183,6 +195,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>44.9338</td>
       <td>71.268413</td>
       <td>1033.597792</td>
+      <td>1450.3500</td>
       <td>112.956561</td>
     </tr>
     <tr>
@@ -196,6 +209,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>155.1510</td>
       <td>4279.616000</td>
       <td>4040.061039</td>
+      <td>5668.9200</td>
       <td>383.101972</td>
     </tr>
     <tr>
@@ -209,6 +223,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>62.7494</td>
       <td>1068.321467</td>
       <td>4134.355844</td>
+      <td>5801.1400</td>
       <td>170.378837</td>
     </tr>
     <tr>
@@ -222,6 +237,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>333.8350</td>
       <td>11210.085333</td>
       <td>4174.846753</td>
+      <td>5861.3000</td>
       <td>808.865310</td>
     </tr>
     <tr>
@@ -235,6 +251,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>103.6910</td>
       <td>2575.290667</td>
       <td>4174.868831</td>
+      <td>5861.2400</td>
       <td>293.480101</td>
     </tr>
   </tbody>
@@ -261,10 +278,12 @@ Operations per cycle, showing how performance scales across different data types
       <th>Blackwell 4000</th>
       <th>Hopper GH200</th>
       <th>Ada 5000</th>
+      <th>Ada L40S</th>
       <th>Blackwell 6000</th>
     </tr>
     <tr>
       <th>name</th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -289,6 +308,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>0.269058</td>
       <td>0.236659</td>
       <td>0.252937</td>
+      <td>0.221727</td>
       <td>0.255822</td>
     </tr>
     <tr>
@@ -302,6 +322,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>83.36684</td>
       <td>261.266532</td>
       <td>129.586535</td>
+      <td>129.585334</td>
       <td>65.824612</td>
     </tr>
     <tr>
@@ -315,6 +336,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>332.814237</td>
       <td>689.756229</td>
       <td>257.108225</td>
+      <td>257.13463</td>
       <td>263.073621</td>
     </tr>
     <tr>
@@ -328,6 +350,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>332.8961</td>
       <td>695.70945</td>
       <td>261.995498</td>
+      <td>261.930695</td>
       <td>263.101165</td>
     </tr>
     <tr>
@@ -341,6 +364,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>331.740229</td>
       <td>789.52009</td>
       <td>261.707359</td>
+      <td>261.840912</td>
       <td>262.320467</td>
     </tr>
     <tr>
@@ -354,6 +378,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>331.792729</td>
       <td>789.527273</td>
       <td>261.707359</td>
+      <td>261.843058</td>
       <td>262.318315</td>
     </tr>
     <tr>
@@ -367,6 +392,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>332.791992</td>
       <td>686.263883</td>
       <td>261.951169</td>
+      <td>262.084865</td>
       <td>262.791296</td>
     </tr>
     <tr>
@@ -380,6 +406,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>333.57058</td>
       <td>1036.838788</td>
       <td>522.71432</td>
+      <td>522.702437</td>
       <td>263.259542</td>
     </tr>
     <tr>
@@ -391,6 +418,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>0.0</td>
       <td>520.46612</td>
       <td>662.862037</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0.0</td>
       <td>524.126207</td>
@@ -406,6 +434,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>331.878151</td>
       <td>0.0</td>
       <td>0.0</td>
+      <td>0.0</td>
       <td>262.323049</td>
     </tr>
     <tr>
@@ -419,6 +448,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>19.991402</td>
       <td>17.451708</td>
       <td>259.412779</td>
+      <td>259.396378</td>
       <td>16.865481</td>
     </tr>
     <tr>
@@ -432,6 +462,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>69.027904</td>
       <td>1047.96229</td>
       <td>1013.976104</td>
+      <td>1013.891348</td>
       <td>57.200742</td>
     </tr>
     <tr>
@@ -445,6 +476,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>27.917703</td>
       <td>261.603053</td>
       <td>1037.642251</td>
+      <td>1037.539012</td>
       <td>25.439169</td>
     </tr>
     <tr>
@@ -458,6 +490,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>297.051651</td>
       <td>5490.093827</td>
       <td>2095.609351</td>
+      <td>2096.597362</td>
       <td>241.542459</td>
     </tr>
     <tr>
@@ -471,10 +504,11 @@ Operations per cycle, showing how performance scales across different data types
       <td>92.265888</td>
       <td>1261.238159</td>
       <td>2095.620433</td>
+      <td>2096.5759</td>
       <td>87.638701</td>
     </tr>
   </tbody>
 </table>
 </details>
 
-*Report generated on 2025-11-10 17:04 UTC*
+*Report generated on 2025-12-16 11:10 UTC*
