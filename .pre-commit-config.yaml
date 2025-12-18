@@ -3,3 +3,10 @@ repos:
     rev: 25.9.0
     hooks:
       - id: black
+  - repo: local
+    hooks:
+      - id: format-json
+        name: jq
+        entry: bash -c 'for f in "$@"; do jq . "$f" > "$f.tmp" && mv "$f.tmp" "$f"; done'
+        language: system
+        files: \.json$
