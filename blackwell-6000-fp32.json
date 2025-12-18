@@ -1,6 +1,27 @@
 [
-{"device_number": 0, "device_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition", "architecture": "sm_120", "multi_processor_count": 188, "clock_rate": 2.28},
-{"name": "fp32", "runtime": 84.8994, "tops": 76.0857, "frequency": 1582},
-{"name": "fp32", "runtime": 84.93, "tops": 76.0583, "frequency": 1582},
-{"name": "fp32", "runtime": 84.9261, "tops": 76.0618, "frequency": 1582}
+  {
+    "device_number": 0,
+    "device_name": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "architecture": "sm_120",
+    "multi_processor_count": 188,
+    "clock_rate": 2.28
+  },
+  {
+    "name": "fp32",
+    "runtime": 84.8994,
+    "tops": 76.0857,
+    "frequency": 1582
+  },
+  {
+    "name": "fp32",
+    "runtime": 84.93,
+    "tops": 76.0583,
+    "frequency": 1582
+  },
+  {
+    "name": "fp32",
+    "runtime": 84.9261,
+    "tops": 76.0618,
+    "frequency": 1582
+  }
 ]

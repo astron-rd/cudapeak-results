@@ -1,33 +1,189 @@
 [
-{"device_number": 0, "device_name": "NVIDIA RTX A4000", "architecture": "sm_86", "multi_processor_count": 48, "clock_rate": 1.56},
-{"name": "mma_tf32_16_16_8", "runtime": 286.507, "tops": 46.0517, "frequency": 1905},
-{"name": "mma_f16_16_16_16", "runtime": 280.392, "tops": 94.1119, "frequency": 1920},
-{"name": "mma_bf16_16_16_16", "runtime": 286.157, "tops": 92.216, "frequency": 1920},
-{"name": "mma_s8_16_16_16", "runtime": 141.417, "tops": 186.599, "frequency": 1905},
-{"name": "mma_s8_16_8_32", "runtime": 141.298, "tops": 186.757, "frequency": 1905},
-{"name": "mma_s4_8_8_32", "runtime": 35.6894, "tops": 369.694, "frequency": 1905},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 35.9492, "tops": 1468.09, "frequency": 1890},
-{"name": "bmma_b1_8_8_128_and", "runtime": 36.8219, "tops": 1433.29, "frequency": 1890},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 143.036, "tops": 1475.9, "frequency": 1890},
-{"name": "bmma_b1_16_8_256_and", "runtime": 143.053, "tops": 1475.72, "frequency": 1890},
-{"name": "mma_tf32_16_16_8", "runtime": 289.048, "tops": 45.6468, "frequency": 1890},
-{"name": "mma_f16_16_16_16", "runtime": 288.983, "tops": 91.3144, "frequency": 1860},
-{"name": "mma_bf16_16_16_16", "runtime": 291.443, "tops": 90.5435, "frequency": 1890},
-{"name": "mma_s8_16_16_16", "runtime": 143.902, "tops": 183.377, "frequency": 1875},
-{"name": "mma_s8_16_8_32", "runtime": 143.624, "tops": 183.732, "frequency": 1875},
-{"name": "mma_s4_8_8_32", "runtime": 36.2435, "tops": 364.041, "frequency": 1875},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 36.2788, "tops": 1454.75, "frequency": 1875},
-{"name": "bmma_b1_8_8_128_and", "runtime": 37.3582, "tops": 1412.72, "frequency": 1860},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 144.355, "tops": 1462.41, "frequency": 1860},
-{"name": "bmma_b1_16_8_256_and", "runtime": 144.355, "tops": 1462.41, "frequency": 1860},
-{"name": "mma_tf32_16_16_8", "runtime": 291.951, "tops": 45.1931, "frequency": 1860},
-{"name": "mma_f16_16_16_16", "runtime": 293.679, "tops": 89.8542, "frequency": 1830},
-{"name": "mma_bf16_16_16_16", "runtime": 294.264, "tops": 89.6755, "frequency": 1860},
-{"name": "mma_s8_16_16_16", "runtime": 144.756, "tops": 182.294, "frequency": 1860},
-{"name": "mma_s8_16_8_32", "runtime": 144.354, "tops": 182.803, "frequency": 1860},
-{"name": "mma_s4_8_8_32", "runtime": 36.4599, "tops": 361.881, "frequency": 1860},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 36.4736, "tops": 1446.98, "frequency": 1860},
-{"name": "bmma_b1_8_8_128_and", "runtime": 37.5301, "tops": 1406.25, "frequency": 1845},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 144.355, "tops": 1462.42, "frequency": 1860},
-{"name": "bmma_b1_16_8_256_and", "runtime": 144.354, "tops": 1462.42, "frequency": 1860}
+  {
+    "device_number": 0,
+    "device_name": "NVIDIA RTX A4000",
+    "architecture": "sm_86",
+    "multi_processor_count": 48,
+    "clock_rate": 1.56
+  },
+  {
+    "name": "mma_tf32_16_16_8",
+    "runtime": 286.507,
+    "tops": 46.0517,
+    "frequency": 1905
+  },
+  {
+    "name": "mma_f16_16_16_16",
+    "runtime": 280.392,
+    "tops": 94.1119,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_bf16_16_16_16",
+    "runtime": 286.157,
+    "tops": 92.216,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_s8_16_16_16",
+    "runtime": 141.417,
+    "tops": 186.599,
+    "frequency": 1905
+  },
+  {
+    "name": "mma_s8_16_8_32",
+    "runtime": 141.298,
+    "tops": 186.757,
+    "frequency": 1905
+  },
+  {
+    "name": "mma_s4_8_8_32",
+    "runtime": 35.6894,
+    "tops": 369.694,
+    "frequency": 1905
+  },
+  {
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 35.9492,
+    "tops": 1468.09,
+    "frequency": 1890
+  },
+  {
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 36.8219,
+    "tops": 1433.29,
+    "frequency": 1890
+  },
+  {
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 143.036,
+    "tops": 1475.9,
+    "frequency": 1890
+  },
+  {
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 143.053,
+    "tops": 1475.72,
+    "frequency": 1890
+  },
+  {
+    "name": "mma_tf32_16_16_8",
+    "runtime": 289.048,
+    "tops": 45.6468,
+    "frequency": 1890
+  },
+  {
+    "name": "mma_f16_16_16_16",
+    "runtime": 288.983,
+    "tops": 91.3144,
+    "frequency": 1860
+  },
+  {
+    "name": "mma_bf16_16_16_16",
+    "runtime": 291.443,
+    "tops": 90.5435,
+    "frequency": 1890
+  },
+  {
+    "name": "mma_s8_16_16_16",
+    "runtime": 143.902,
+    "tops": 183.377,
+    "frequency": 1875
+  },
+  {
+    "name": "mma_s8_16_8_32",
+    "runtime": 143.624,
+    "tops": 183.732,
+    "frequency": 1875
+  },
+  {
+    "name": "mma_s4_8_8_32",
+    "runtime": 36.2435,
+    "tops": 364.041,
+    "frequency": 1875
+  },
+  {
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 36.2788,
+    "tops": 1454.75,
+    "frequency": 1875
+  },
+  {
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 37.3582,
+    "tops": 1412.72,
+    "frequency": 1860
+  },
+  {
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 144.355,
+    "tops": 1462.41,
+    "frequency": 1860
+  },
+  {
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 144.355,
+    "tops": 1462.41,
+    "frequency": 1860
+  },
+  {
+    "name": "mma_tf32_16_16_8",
+    "runtime": 291.951,
+    "tops": 45.1931,
+    "frequency": 1860
+  },
+  {
+    "name": "mma_f16_16_16_16",
+    "runtime": 293.679,
+    "tops": 89.8542,
+    "frequency": 1830
+  },
+  {
+    "name": "mma_bf16_16_16_16",
+    "runtime": 294.264,
+    "tops": 89.6755,
+    "frequency": 1860
+  },
+  {
+    "name": "mma_s8_16_16_16",
+    "runtime": 144.756,
+    "tops": 182.294,
+    "frequency": 1860
+  },
+  {
+    "name": "mma_s8_16_8_32",
+    "runtime": 144.354,
+    "tops": 182.803,
+    "frequency": 1860
+  },
+  {
+    "name": "mma_s4_8_8_32",
+    "runtime": 36.4599,
+    "tops": 361.881,
+    "frequency": 1860
+  },
+  {
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 36.4736,
+    "tops": 1446.98,
+    "frequency": 1860
+  },
+  {
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 37.5301,
+    "tops": 1406.25,
+    "frequency": 1845
+  },
+  {
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 144.355,
+    "tops": 1462.42,
+    "frequency": 1860
+  },
+  {
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 144.354,
+    "tops": 1462.42,
+    "frequency": 1860
+  }
 ]

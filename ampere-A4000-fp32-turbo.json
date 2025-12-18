@@ -1,6 +1,27 @@
 [
-{"device_number": 0, "device_name": "NVIDIA RTX A4000", "architecture": "sm_86", "multi_processor_count": 48, "clock_rate": 1.56},
-{"name": "fp32", "runtime": 84.5861, "tops": 19.4981, "frequency": 1620},
-{"name": "fp32", "runtime": 85.0735, "tops": 19.3864, "frequency": 1605},
-{"name": "fp32", "runtime": 85.7935, "tops": 19.2237, "frequency": 1590}
+  {
+    "device_number": 0,
+    "device_name": "NVIDIA RTX A4000",
+    "architecture": "sm_86",
+    "multi_processor_count": 48,
+    "clock_rate": 1.56
+  },
+  {
+    "name": "fp32",
+    "runtime": 84.5861,
+    "tops": 19.4981,
+    "frequency": 1620
+  },
+  {
+    "name": "fp32",
+    "runtime": 85.0735,
+    "tops": 19.3864,
+    "frequency": 1605
+  },
+  {
+    "name": "fp32",
+    "runtime": 85.7935,
+    "tops": 19.2237,
+    "frequency": 1590
+  }
 ]

@@ -1,39 +1,225 @@
 [
-{"device_number": 0, "device_name": "NVIDIA GeForce RTX 4070", "architecture": "sm_89", "multi_processor_count": 46, "clock_rate": 2.475},
-{"name": "mma_tf32_16_16_8", "runtime": 559.839, "tops": 22.5858, "frequency": 1920},
-{"name": "mma_f16_16_16_16", "runtime": 559.399, "tops": 45.207, "frequency": 1920},
-{"name": "mma_bf16_16_16_16", "runtime": 560.501, "tops": 45.1182, "frequency": 1920},
-{"name": "mma_s8_16_16_16", "runtime": 140.231, "tops": 180.336, "frequency": 1920},
-{"name": "mma_s8_16_8_32", "runtime": 139.842, "tops": 180.838, "frequency": 1920},
-{"name": "mma_e4m3_16_8_32", "runtime": 279.931, "tops": 90.3391, "frequency": 1920},
-{"name": "mma_e5m2_16_8_32", "runtime": 279.932, "tops": 90.339, "frequency": 1920},
-{"name": "mma_s4_8_8_32", "runtime": 35.3203, "tops": 357.992, "frequency": 1920},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 35.3202, "tops": 1431.97, "frequency": 1920},
-{"name": "bmma_b1_8_8_128_and", "runtime": 36.1447, "tops": 1399.31, "frequency": 1920},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 139.843, "tops": 1446.69, "frequency": 1920},
-{"name": "bmma_b1_16_8_256_and", "runtime": 139.843, "tops": 1446.7, "frequency": 1920},
-{"name": "mma_tf32_16_16_8", "runtime": 559.839, "tops": 22.5857, "frequency": 1920},
-{"name": "mma_f16_16_16_16", "runtime": 559.399, "tops": 45.207, "frequency": 1920},
-{"name": "mma_bf16_16_16_16", "runtime": 560.501, "tops": 45.1181, "frequency": 1920},
-{"name": "mma_s8_16_16_16", "runtime": 140.231, "tops": 180.336, "frequency": 1920},
-{"name": "mma_s8_16_8_32", "runtime": 139.841, "tops": 180.839, "frequency": 1920},
-{"name": "mma_e4m3_16_8_32", "runtime": 279.932, "tops": 90.3388, "frequency": 1920},
-{"name": "mma_e5m2_16_8_32", "runtime": 279.932, "tops": 90.3389, "frequency": 1920},
-{"name": "mma_s4_8_8_32", "runtime": 35.3203, "tops": 357.992, "frequency": 1920},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 35.3203, "tops": 1431.97, "frequency": 1920},
-{"name": "bmma_b1_8_8_128_and", "runtime": 36.1449, "tops": 1399.3, "frequency": 1920},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 140.187, "tops": 1443.14, "frequency": 1920},
-{"name": "bmma_b1_16_8_256_and", "runtime": 139.842, "tops": 1446.7, "frequency": 1920},
-{"name": "mma_tf32_16_16_8", "runtime": 559.843, "tops": 22.5856, "frequency": 1920},
-{"name": "mma_f16_16_16_16", "runtime": 559.399, "tops": 45.207, "frequency": 1920},
-{"name": "mma_bf16_16_16_16", "runtime": 560.501, "tops": 45.1181, "frequency": 1920},
-{"name": "mma_s8_16_16_16", "runtime": 140.231, "tops": 180.336, "frequency": 1920},
-{"name": "mma_s8_16_8_32", "runtime": 139.843, "tops": 180.837, "frequency": 1920},
-{"name": "mma_e4m3_16_8_32", "runtime": 279.932, "tops": 90.3389, "frequency": 1920},
-{"name": "mma_e5m2_16_8_32", "runtime": 279.932, "tops": 90.339, "frequency": 1920},
-{"name": "mma_s4_8_8_32", "runtime": 35.3203, "tops": 357.992, "frequency": 1920},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 35.3203, "tops": 1431.97, "frequency": 1920},
-{"name": "bmma_b1_8_8_128_and", "runtime": 36.1445, "tops": 1399.31, "frequency": 1920},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 139.842, "tops": 1446.7, "frequency": 1920},
-{"name": "bmma_b1_16_8_256_and", "runtime": 139.844, "tops": 1446.69, "frequency": 1920}
+  {
+    "device_number": 0,
+    "device_name": "NVIDIA GeForce RTX 4070",
+    "architecture": "sm_89",
+    "multi_processor_count": 46,
+    "clock_rate": 2.475
+  },
+  {
+    "name": "mma_tf32_16_16_8",
+    "runtime": 559.839,
+    "tops": 22.5858,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_f16_16_16_16",
+    "runtime": 559.399,
+    "tops": 45.207,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_bf16_16_16_16",
+    "runtime": 560.501,
+    "tops": 45.1182,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_s8_16_16_16",
+    "runtime": 140.231,
+    "tops": 180.336,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_s8_16_8_32",
+    "runtime": 139.842,
+    "tops": 180.838,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_e4m3_16_8_32",
+    "runtime": 279.931,
+    "tops": 90.3391,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_e5m2_16_8_32",
+    "runtime": 279.932,
+    "tops": 90.339,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_s4_8_8_32",
+    "runtime": 35.3203,
+    "tops": 357.992,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 35.3202,
+    "tops": 1431.97,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 36.1447,
+    "tops": 1399.31,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 139.843,
+    "tops": 1446.69,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 139.843,
+    "tops": 1446.7,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_tf32_16_16_8",
+    "runtime": 559.839,
+    "tops": 22.5857,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_f16_16_16_16",
+    "runtime": 559.399,
+    "tops": 45.207,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_bf16_16_16_16",
+    "runtime": 560.501,
+    "tops": 45.1181,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_s8_16_16_16",
+    "runtime": 140.231,
+    "tops": 180.336,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_s8_16_8_32",
+    "runtime": 139.841,
+    "tops": 180.839,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_e4m3_16_8_32",
+    "runtime": 279.932,
+    "tops": 90.3388,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_e5m2_16_8_32",
+    "runtime": 279.932,
+    "tops": 90.3389,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_s4_8_8_32",
+    "runtime": 35.3203,
+    "tops": 357.992,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 35.3203,
+    "tops": 1431.97,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 36.1449,
+    "tops": 1399.3,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 140.187,
+    "tops": 1443.14,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 139.842,
+    "tops": 1446.7,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_tf32_16_16_8",
+    "runtime": 559.843,
+    "tops": 22.5856,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_f16_16_16_16",
+    "runtime": 559.399,
+    "tops": 45.207,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_bf16_16_16_16",
+    "runtime": 560.501,
+    "tops": 45.1181,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_s8_16_16_16",
+    "runtime": 140.231,
+    "tops": 180.336,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_s8_16_8_32",
+    "runtime": 139.843,
+    "tops": 180.837,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_e4m3_16_8_32",
+    "runtime": 279.932,
+    "tops": 90.3389,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_e5m2_16_8_32",
+    "runtime": 279.932,
+    "tops": 90.339,
+    "frequency": 1920
+  },
+  {
+    "name": "mma_s4_8_8_32",
+    "runtime": 35.3203,
+    "tops": 357.992,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 35.3203,
+    "tops": 1431.97,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 36.1445,
+    "tops": 1399.31,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 139.842,
+    "tops": 1446.7,
+    "frequency": 1920
+  },
+  {
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 139.844,
+    "tops": 1446.69,
+    "frequency": 1920
+  }
 ]

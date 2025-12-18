@@ -1,6 +1,27 @@
 [
-{"device_number": 0, "device_name": "NVIDIA A100-PCIE-40GB", "architecture": "sm_80", "multi_processor_count": 108, "clock_rate": 1.41},
-{"name": "fp32", "runtime": 358.71, "tops": 10.345, "frequency": 765},
-{"name": "fp32", "runtime": 358.728, "tops": 10.3445, "frequency": 765},
-{"name": "fp32", "runtime": 358.749, "tops": 10.3439, "frequency": 765}
+  {
+    "device_number": 0,
+    "device_name": "NVIDIA A100-PCIE-40GB",
+    "architecture": "sm_80",
+    "multi_processor_count": 108,
+    "clock_rate": 1.41
+  },
+  {
+    "name": "fp32",
+    "runtime": 358.71,
+    "tops": 10.345,
+    "frequency": 765
+  },
+  {
+    "name": "fp32",
+    "runtime": 358.728,
+    "tops": 10.3445,
+    "frequency": 765
+  },
+  {
+    "name": "fp32",
+    "runtime": 358.749,
+    "tops": 10.3439,
+    "frequency": 765
+  }
 ]

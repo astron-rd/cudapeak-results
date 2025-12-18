@@ -1,6 +1,27 @@
 [
-{"device_number": 0, "device_name": "NVIDIA RTX 5000 Ada Generation", "architecture": "sm_89", "multi_processor_count": 100, "clock_rate": 2.55},
-{"name": "fp32", "runtime": 117.613, "tops": 29.2142, "frequency": 1155},
-{"name": "fp32", "runtime": 117.613, "tops": 29.2142, "frequency": 1155},
-{"name": "fp32", "runtime": 117.615, "tops": 29.2137, "frequency": 1155}
+  {
+    "device_number": 0,
+    "device_name": "NVIDIA RTX 5000 Ada Generation",
+    "architecture": "sm_89",
+    "multi_processor_count": 100,
+    "clock_rate": 2.55
+  },
+  {
+    "name": "fp32",
+    "runtime": 117.613,
+    "tops": 29.2142,
+    "frequency": 1155
+  },
+  {
+    "name": "fp32",
+    "runtime": 117.613,
+    "tops": 29.2142,
+    "frequency": 1155
+  },
+  {
+    "name": "fp32",
+    "runtime": 117.615,
+    "tops": 29.2137,
+    "frequency": 1155
+  }
 ]

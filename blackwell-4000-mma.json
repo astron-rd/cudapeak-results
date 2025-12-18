@@ -1,45 +1,219 @@
 [
-{"device_number": 0, "device_name": "NVIDIA RTX PRO 4000 Blackwell", "architecture": "sm_120", "multi_processor_count": 70, "clock_rate": 2.055},
-{"name": "mma_tf32_16_16_8", "runtime": 445.24, "tops": 43.2159},
-{"name": "mma_f16_16_16_16", "runtime": 218.704, "tops": 175.959},
-{"name": "mma_bf16_16_16_16", "runtime": 218.752, "tops": 175.921},
-{"name": "mma_s8_16_16_16", "runtime": 218.326, "tops": 176.264},
-{"name": "mma_s8_16_8_32", "runtime": 109.42, "tops": 351.698},
-{"name": "mma_e4m3_16_8_32", "runtime": 109.709, "tops": 350.772},
-{"name": "mma_e5m2_16_8_32", "runtime": 109.714, "tops": 350.755},
-{"name": "mma_s4_8_8_32", "runtime": 433.824, "tops": 44.3532},
-{"name": "mma_e2m1_16_8_64", "runtime": 109.024, "tops": 705.955},
-{"name": "mma_e3m2_16_8_32", "runtime": 109.701, "tops": 350.797},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 1226.56, "tops": 62.7494},
-{"name": "bmma_b1_8_8_128_and", "runtime": 496.072, "tops": 155.151},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 2969.05, "tops": 103.691},
-{"name": "bmma_b1_16_8_256_and", "runtime": 922.201, "tops": 333.835},
-{"name": "mma_tf32_16_16_8", "runtime": 410.747, "tops": 46.845},
-{"name": "mma_f16_16_16_16", "runtime": 205.727, "tops": 187.059},
-{"name": "mma_bf16_16_16_16", "runtime": 205.776, "tops": 187.013},
-{"name": "mma_s8_16_16_16", "runtime": 205.31, "tops": 187.438},
-{"name": "mma_s8_16_8_32", "runtime": 102.895, "tops": 374.001},
-{"name": "mma_e4m3_16_8_32", "runtime": 103.221, "tops": 372.819},
-{"name": "mma_e5m2_16_8_32", "runtime": 103.205, "tops": 372.878},
-{"name": "mma_s4_8_8_32", "runtime": 428.218, "tops": 44.9338},
-{"name": "mma_e2m1_16_8_64", "runtime": 103.318, "tops": 744.943},
-{"name": "mma_e3m2_16_8_32", "runtime": 103.178, "tops": 372.974},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 1306.96, "tops": 58.8891},
-{"name": "bmma_b1_8_8_128_and", "runtime": 509.959, "tops": 150.925},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 3134.2, "tops": 98.2272},
-{"name": "bmma_b1_16_8_256_and", "runtime": 941.176, "tops": 327.105},
-{"name": "mma_tf32_16_16_8", "runtime": 411.118, "tops": 46.8027},
-{"name": "mma_f16_16_16_16", "runtime": 205.821, "tops": 186.973},
-{"name": "mma_bf16_16_16_16", "runtime": 205.889, "tops": 186.911},
-{"name": "mma_s8_16_16_16", "runtime": 205.393, "tops": 187.362},
-{"name": "mma_s8_16_8_32", "runtime": 102.923, "tops": 373.899},
-{"name": "mma_e4m3_16_8_32", "runtime": 103.28, "tops": 372.607},
-{"name": "mma_e5m2_16_8_32", "runtime": 103.681, "tops": 371.168},
-{"name": "mma_s4_8_8_32", "runtime": 437.029, "tops": 44.0279},
-{"name": "mma_e2m1_16_8_64", "runtime": 103.887, "tops": 740.86},
-{"name": "mma_e3m2_16_8_32", "runtime": 103.768, "tops": 370.854},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 1371.34, "tops": 56.1244},
-{"name": "bmma_b1_8_8_128_and", "runtime": 519.927, "tops": 148.032},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 3254.47, "tops": 94.5971},
-{"name": "bmma_b1_16_8_256_and", "runtime": 953.618, "tops": 322.837}
+  {
+    "device_number": 0,
+    "device_name": "NVIDIA RTX PRO 4000 Blackwell",
+    "architecture": "sm_120",
+    "multi_processor_count": 70,
+    "clock_rate": 2.055
+  },
+  {
+    "name": "mma_tf32_16_16_8",
+    "runtime": 445.24,
+    "tops": 43.2159
+  },
+  {
+    "name": "mma_f16_16_16_16",
+    "runtime": 218.704,
+    "tops": 175.959
+  },
+  {
+    "name": "mma_bf16_16_16_16",
+    "runtime": 218.752,
+    "tops": 175.921
+  },
+  {
+    "name": "mma_s8_16_16_16",
+    "runtime": 218.326,
+    "tops": 176.264
+  },
+  {
+    "name": "mma_s8_16_8_32",
+    "runtime": 109.42,
+    "tops": 351.698
+  },
+  {
+    "name": "mma_e4m3_16_8_32",
+    "runtime": 109.709,
+    "tops": 350.772
+  },
+  {
+    "name": "mma_e5m2_16_8_32",
+    "runtime": 109.714,
+    "tops": 350.755
+  },
+  {
+    "name": "mma_s4_8_8_32",
+    "runtime": 433.824,
+    "tops": 44.3532
+  },
+  {
+    "name": "mma_e2m1_16_8_64",
+    "runtime": 109.024,
+    "tops": 705.955
+  },
+  {
+    "name": "mma_e3m2_16_8_32",
+    "runtime": 109.701,
+    "tops": 350.797
+  },
+  {
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 1226.56,
+    "tops": 62.7494
+  },
+  {
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 496.072,
+    "tops": 155.151
+  },
+  {
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 2969.05,
+    "tops": 103.691
+  },
+  {
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 922.201,
+    "tops": 333.835
+  },
+  {
+    "name": "mma_tf32_16_16_8",
+    "runtime": 410.747,
+    "tops": 46.845
+  },
+  {
+    "name": "mma_f16_16_16_16",
+    "runtime": 205.727,
+    "tops": 187.059
+  },
+  {
+    "name": "mma_bf16_16_16_16",
+    "runtime": 205.776,
+    "tops": 187.013
+  },
+  {
+    "name": "mma_s8_16_16_16",
+    "runtime": 205.31,
+    "tops": 187.438
+  },
+  {
+    "name": "mma_s8_16_8_32",
+    "runtime": 102.895,
+    "tops": 374.001
+  },
+  {
+    "name": "mma_e4m3_16_8_32",
+    "runtime": 103.221,
+    "tops": 372.819
+  },
+  {
+    "name": "mma_e5m2_16_8_32",
+    "runtime": 103.205,
+    "tops": 372.878
+  },
+  {
+    "name": "mma_s4_8_8_32",
+    "runtime": 428.218,
+    "tops": 44.9338
+  },
+  {
+    "name": "mma_e2m1_16_8_64",
+    "runtime": 103.318,
+    "tops": 744.943
+  },
+  {
+    "name": "mma_e3m2_16_8_32",
+    "runtime": 103.178,
+    "tops": 372.974
+  },
+  {
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 1306.96,
+    "tops": 58.8891
+  },
+  {
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 509.959,
+    "tops": 150.925
+  },
+  {
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 3134.2,
+    "tops": 98.2272
+  },
+  {
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 941.176,
+    "tops": 327.105
+  },
+  {
+    "name": "mma_tf32_16_16_8",
+    "runtime": 411.118,
+    "tops": 46.8027
+  },
+  {
+    "name": "mma_f16_16_16_16",
+    "runtime": 205.821,
+    "tops": 186.973
+  },
+  {
+    "name": "mma_bf16_16_16_16",
+    "runtime": 205.889,
+    "tops": 186.911
+  },
+  {
+    "name": "mma_s8_16_16_16",
+    "runtime": 205.393,
+    "tops": 187.362
+  },
+  {
+    "name": "mma_s8_16_8_32",
+    "runtime": 102.923,
+    "tops": 373.899
+  },
+  {
+    "name": "mma_e4m3_16_8_32",
+    "runtime": 103.28,
+    "tops": 372.607
+  },
+  {
+    "name": "mma_e5m2_16_8_32",
+    "runtime": 103.681,
+    "tops": 371.168
+  },
+  {
+    "name": "mma_s4_8_8_32",
+    "runtime": 437.029,
+    "tops": 44.0279
+  },
+  {
+    "name": "mma_e2m1_16_8_64",
+    "runtime": 103.887,
+    "tops": 740.86
+  },
+  {
+    "name": "mma_e3m2_16_8_32",
+    "runtime": 103.768,
+    "tops": 370.854
+  },
+  {
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 1371.34,
+    "tops": 56.1244
+  },
+  {
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 519.927,
+    "tops": 148.032
+  },
+  {
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 3254.47,
+    "tops": 94.5971
+  },
+  {
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 953.618,
+    "tops": 322.837
+  }
 ]
