@@ -1,0 +1,189 @@
+[
+  {
+    "architecture": "sm_121",
+    "clock_rate": 2.4179999999999997,
+    "device_name": "NVIDIA GB10",
+    "device_number": 0,
+    "multi_processor_count": 48
+  },
+  {
+    "gops": 13194.14,
+    "name": "mma_tf32_16_16_8",
+    "runtime": 414.457,
+    "tops": 31.835
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_f16_16_16_16",
+    "runtime": 207.62,
+    "tops": 127.099
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_bf16_16_16_16",
+    "runtime": 207.742,
+    "tops": 127.024
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_s8_16_16_16",
+    "runtime": 207.516,
+    "tops": 127.163
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_s8_16_8_32",
+    "runtime": 104.224,
+    "tops": 253.189
+  },
+  {
+    "gops": 13194.14,
+    "name": "mma_s4_8_8_32",
+    "runtime": 413.051,
+    "tops": 31.943
+  },
+  {
+    "gops": 52776.558,
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 1085.29,
+    "tops": 48.629
+  },
+  {
+    "gops": 52776.558,
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 488.06,
+    "tops": 108.135
+  },
+  {
+    "gops": 211106.233,
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 2570.067,
+    "tops": 82.14
+  },
+  {
+    "gops": 211106.233,
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 1400.489,
+    "tops": 150.738
+  },
+  {
+    "gops": 13194.14,
+    "name": "mma_tf32_16_16_8",
+    "runtime": 949.947,
+    "tops": 13.889
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_f16_16_16_16",
+    "runtime": 406.141,
+    "tops": 64.973
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_bf16_16_16_16",
+    "runtime": 405.286,
+    "tops": 65.11
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_s8_16_16_16",
+    "runtime": 399.905,
+    "tops": 65.986
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_s8_16_8_32",
+    "runtime": 200.139,
+    "tops": 131.85
+  },
+  {
+    "gops": 13194.14,
+    "name": "mma_s4_8_8_32",
+    "runtime": 616.6,
+    "tops": 21.398
+  },
+  {
+    "gops": 52776.558,
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 1085.873,
+    "tops": 48.603
+  },
+  {
+    "gops": 52776.558,
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 492.506,
+    "tops": 107.159
+  },
+  {
+    "gops": 211106.233,
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 2576.387,
+    "tops": 81.939
+  },
+  {
+    "gops": 211106.233,
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 924.634,
+    "tops": 228.313
+  },
+  {
+    "gops": 13194.14,
+    "name": "mma_tf32_16_16_8",
+    "runtime": 420.551,
+    "tops": 31.373
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_f16_16_16_16",
+    "runtime": 209.665,
+    "tops": 125.859
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_bf16_16_16_16",
+    "runtime": 209.949,
+    "tops": 125.689
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_s8_16_16_16",
+    "runtime": 209.6,
+    "tops": 125.898
+  },
+  {
+    "gops": 26388.279,
+    "name": "mma_s8_16_8_32",
+    "runtime": 105.271,
+    "tops": 250.669
+  },
+  {
+    "gops": 13194.14,
+    "name": "mma_s4_8_8_32",
+    "runtime": 416.755,
+    "tops": 31.659
+  },
+  {
+    "gops": 52776.558,
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 1091.1,
+    "tops": 48.37
+  },
+  {
+    "gops": 52776.558,
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 492.63,
+    "tops": 107.132
+  },
+  {
+    "gops": 211106.233,
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 2584.605,
+    "tops": 81.678
+  },
+  {
+    "gops": 211106.233,
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 922.623,
+    "tops": 228.811
+  }
+]

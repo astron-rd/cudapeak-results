@@ -1,0 +1,27 @@
+[
+  {
+    "architecture": "sm_121",
+    "clock_rate": 2.4179999999999997,
+    "device_name": "NVIDIA GB10",
+    "device_number": 0,
+    "multi_processor_count": 48
+  },
+  {
+    "gops": 1649.267,
+    "name": "fp32",
+    "runtime": 52.236,
+    "tops": 31.573
+  },
+  {
+    "gops": 1649.267,
+    "name": "fp32",
+    "runtime": 53.288,
+    "tops": 30.95
+  },
+  {
+    "gops": 1649.267,
+    "name": "fp32",
+    "runtime": 53.47,
+    "tops": 30.845
+  }
+]
