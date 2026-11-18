@@ -114,7 +114,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>213.455950</td>
       <td>116.452746</td>
       <td>123.545516</td>
-      <td>0.000</td>
+      <td>253.213</td>
       <td>372.8190</td>
       <td>1612.101333</td>
       <td>521.370130</td>
@@ -129,7 +129,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>213.455950</td>
       <td>116.452617</td>
       <td>123.544432</td>
-      <td>0.000</td>
+      <td>253.198</td>
       <td>372.8780</td>
       <td>1612.116000</td>
       <td>521.370130</td>
@@ -384,7 +384,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>261.708444</td>
       <td>130.926232</td>
       <td>131.152352</td>
-      <td>0.0</td>
+      <td>279.253377</td>
       <td>331.740229</td>
       <td>789.52009</td>
       <td>261.707359</td>
@@ -399,7 +399,7 @@ Operations per cycle, showing how performance scales across different data types
       <td>261.708444</td>
       <td>130.926087</td>
       <td>131.151201</td>
-      <td>0.0</td>
+      <td>279.236835</td>
       <td>331.792729</td>
       <td>789.527273</td>
       <td>261.707359</td>
@@ -545,4 +545,4 @@ Operations per cycle, showing how performance scales across different data types
 </table>
 </details>
 
-*Report generated on 2026-11-14 18:29 UTC*
+*Report generated on 2026-11-18 18:55 UTC*
