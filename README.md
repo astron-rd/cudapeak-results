@@ -1,5 +1,5 @@
 
-# CUDA Peak Performance Report
+# CUDA peak performance report
 
 This auto-generated report presents benchmark results for the [cudapeak](https://github.com/astron-rd/cudapeak) FP32 and MMA synthetic performance benchmarks on various GPUs.
 
@@ -11,7 +11,7 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
 ![Absolute performance](performance.png)
 
 <details>
-<summary><b>📊 Data table</b></summary>
+<summary><b>Data table</b></summary>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -275,13 +275,13 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
 </table>
 </details>
 
-## Operations per SM per cycle
-Operations per SM per clock cycle, showing how performance scales across different data types.
+## Operations per SM per clock cycle
+Measured in operations per SM per clock cycle, showing how performance scales across different data types.
 
-![Operations per cycle](ops_per_cycle.png)
+![Operations per SM per clock cycle](ops_per_cycle.png)
 
 <details>
-<summary><b>📊 Data table</b></summary>
+<summary><b>Data table</b></summary>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -551,7 +551,7 @@ Measured in teraoperations per second (TOPs) for tcgen05 (UMMA) kernels. On Thor
 ![tcgen05 absolute performance](tcgen05_performance.png)
 
 <details>
-<summary><b>📊 Data table</b></summary>
+<summary><b>Data table</b></summary>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -592,13 +592,13 @@ Measured in teraoperations per second (TOPs) for tcgen05 (UMMA) kernels. On Thor
 </table>
 </details>
 
-## tcgen05 operations per SM per cycle
-Operations per SM per clock cycle for tcgen05 (UMMA) kernels.
+## tcgen05 operations per SM per clock cycle
+Measured in operations per SM per clock cycle for tcgen05 (UMMA) kernels.
 
-![tcgen05 operations per cycle](tcgen05_ops_per_cycle.png)
+![tcgen05 operations per SM per clock cycle](tcgen05_ops_per_cycle.png)
 
 <details>
-<summary><b>📊 Data table</b></summary>
+<summary><b>Data table</b></summary>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -639,4 +639,4 @@ Operations per SM per clock cycle for tcgen05 (UMMA) kernels.
 </table>
 </details>
 
-*Report generated on 2026-11-20 10:17 UTC*
+*Report generated on 2026-11-20 10:52 UTC*
