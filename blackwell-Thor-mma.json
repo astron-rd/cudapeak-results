@@ -1,39 +1,333 @@
 [
-{"device_number": 0, "device_name": "NVIDIA Thor", "architecture": "sm_110", "multi_processor_count": 20, "clock_rate": 1.04858},
-{"name": "mma_tf32_16_16_8", "runtime": 388.528, "tops": 14.1497},
-{"name": "mma_f16_16_16_16", "runtime": 194.127, "tops": 56.6389},
-{"name": "mma_bf16_16_16_16", "runtime": 194.904, "tops": 56.4129},
-{"name": "mma_s8_16_16_16", "runtime": 193.749, "tops": 56.7494},
-{"name": "mma_s8_16_8_32", "runtime": 97.4848, "tops": 112.788},
-{"name": "mma_e4m3_16_8_32", "runtime": 64.1901, "tops": 171.29},
-{"name": "mma_e5m2_16_8_32", "runtime": 64.1919, "tops": 171.285},
-{"name": "mma_s4_8_8_32", "runtime": 777.773, "tops": 7.06833},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 1848.45, "tops": 11.8966},
-{"name": "bmma_b1_8_8_128_and", "runtime": 705.632, "tops": 31.1639},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 4231.43, "tops": 20.7875},
-{"name": "bmma_b1_16_8_256_and", "runtime": 1235.49, "tops": 71.1954},
-{"name": "mma_tf32_16_16_8", "runtime": 387.634, "tops": 14.1823},
-{"name": "mma_f16_16_16_16", "runtime": 194.126, "tops": 56.6391},
-{"name": "mma_bf16_16_16_16", "runtime": 194.907, "tops": 56.4122},
-{"name": "mma_s8_16_16_16", "runtime": 193.746, "tops": 56.75},
-{"name": "mma_s8_16_8_32", "runtime": 97.4787, "tops": 112.795},
-{"name": "mma_e4m3_16_8_32", "runtime": 64.1912, "tops": 171.287},
-{"name": "mma_e5m2_16_8_32", "runtime": 64.1929, "tops": 171.282},
-{"name": "mma_s4_8_8_32", "runtime": 777.772, "tops": 7.06834},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 1848.45, "tops": 11.8966},
-{"name": "bmma_b1_8_8_128_and", "runtime": 705.638, "tops": 31.1636},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 4231.42, "tops": 20.7876},
-{"name": "bmma_b1_16_8_256_and", "runtime": 1235.51, "tops": 71.1943},
-{"name": "mma_tf32_16_16_8", "runtime": 387.634, "tops": 14.1823},
-{"name": "mma_f16_16_16_16", "runtime": 194.124, "tops": 56.6397},
-{"name": "mma_bf16_16_16_16", "runtime": 194.906, "tops": 56.4124},
-{"name": "mma_s8_16_16_16", "runtime": 193.748, "tops": 56.7497},
-{"name": "mma_s8_16_8_32", "runtime": 97.478, "tops": 112.796},
-{"name": "mma_e4m3_16_8_32", "runtime": 64.19, "tops": 171.29},
-{"name": "mma_e5m2_16_8_32", "runtime": 64.193, "tops": 171.282},
-{"name": "mma_s4_8_8_32", "runtime": 777.779, "tops": 7.06828},
-{"name": "bmma_b1_8_8_128_xor", "runtime": 1848.44, "tops": 11.8966},
-{"name": "bmma_b1_8_8_128_and", "runtime": 705.624, "tops": 31.1642},
-{"name": "bmma_b1_16_8_256_xor", "runtime": 4231.42, "tops": 20.7876},
-{"name": "bmma_b1_16_8_256_and", "runtime": 1235.51, "tops": 71.1942}
+  {
+    "architecture": "sm_110",
+    "clock_rate": 1.048576,
+    "device_name": "NVIDIA Thor",
+    "device_number": 0,
+    "multi_processor_count": 20
+  },
+  {
+    "gops": 5497.558,
+    "name": "mma_tf32_16_16_8",
+    "runtime": 392.561,
+    "tops": 14.004
+  },
+  {
+    "gops": 419.43,
+    "name": "tcgen05_tf32_128_128_32",
+    "runtime": 3.705,
+    "tops": 113.207
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_f16_16_16_16",
+    "runtime": 194.125,
+    "tops": 56.639
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_bf16_16_16_16",
+    "runtime": 194.906,
+    "tops": 56.413
+  },
+  {
+    "gops": 838.861,
+    "name": "tcgen05_f16_128_128_64",
+    "runtime": 3.701,
+    "tops": 226.682
+  },
+  {
+    "gops": 838.861,
+    "name": "tcgen05_bf16_128_128_64",
+    "runtime": 3.702,
+    "tops": 226.611
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_s8_16_16_16",
+    "runtime": 193.748,
+    "tops": 56.75
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_s8_16_8_32",
+    "runtime": 97.478,
+    "tops": 112.796
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_e4m3_16_8_32",
+    "runtime": 64.192,
+    "tops": 171.284
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_e5m2_16_8_32",
+    "runtime": 64.193,
+    "tops": 171.283
+  },
+  {
+    "gops": 1677.722,
+    "name": "tcgen05_s8_128_128_128",
+    "runtime": 3.703,
+    "tops": 453.129
+  },
+  {
+    "gops": 1677.722,
+    "name": "tcgen05_e4m3_128_128_128",
+    "runtime": 3.702,
+    "tops": 453.148
+  },
+  {
+    "gops": 1677.722,
+    "name": "tcgen05_e5m2_128_128_128",
+    "runtime": 3.7,
+    "tops": 453.399
+  },
+  {
+    "gops": 5497.558,
+    "name": "mma_s4_8_8_32",
+    "runtime": 777.774,
+    "tops": 7.068
+  },
+  {
+    "gops": 21990.233,
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 1848.446,
+    "tops": 11.897
+  },
+  {
+    "gops": 21990.233,
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 705.642,
+    "tops": 31.163
+  },
+  {
+    "gops": 87960.93,
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 4231.426,
+    "tops": 20.788
+  },
+  {
+    "gops": 87960.93,
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 1235.514,
+    "tops": 71.194
+  },
+  {
+    "gops": 5497.558,
+    "name": "mma_tf32_16_16_8",
+    "runtime": 387.635,
+    "tops": 14.182
+  },
+  {
+    "gops": 419.43,
+    "name": "tcgen05_tf32_128_128_32",
+    "runtime": 3.701,
+    "tops": 113.325
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_f16_16_16_16",
+    "runtime": 194.126,
+    "tops": 56.639
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_bf16_16_16_16",
+    "runtime": 194.906,
+    "tops": 56.412
+  },
+  {
+    "gops": 838.861,
+    "name": "tcgen05_f16_128_128_64",
+    "runtime": 3.702,
+    "tops": 226.592
+  },
+  {
+    "gops": 838.861,
+    "name": "tcgen05_bf16_128_128_64",
+    "runtime": 3.701,
+    "tops": 226.651
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_s8_16_16_16",
+    "runtime": 193.749,
+    "tops": 56.749
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_s8_16_8_32",
+    "runtime": 97.479,
+    "tops": 112.795
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_e4m3_16_8_32",
+    "runtime": 64.193,
+    "tops": 171.283
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_e5m2_16_8_32",
+    "runtime": 64.191,
+    "tops": 171.287
+  },
+  {
+    "gops": 1677.722,
+    "name": "tcgen05_s8_128_128_128",
+    "runtime": 3.702,
+    "tops": 453.219
+  },
+  {
+    "gops": 1677.722,
+    "name": "tcgen05_e4m3_128_128_128",
+    "runtime": 3.703,
+    "tops": 453.113
+  },
+  {
+    "gops": 1677.722,
+    "name": "tcgen05_e5m2_128_128_128",
+    "runtime": 3.701,
+    "tops": 453.281
+  },
+  {
+    "gops": 5497.558,
+    "name": "mma_s4_8_8_32",
+    "runtime": 777.775,
+    "tops": 7.068
+  },
+  {
+    "gops": 21990.233,
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 1848.459,
+    "tops": 11.897
+  },
+  {
+    "gops": 21990.233,
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 705.63,
+    "tops": 31.164
+  },
+  {
+    "gops": 87960.93,
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 4231.427,
+    "tops": 20.788
+  },
+  {
+    "gops": 87960.93,
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 1235.484,
+    "tops": 71.196
+  },
+  {
+    "gops": 5497.558,
+    "name": "mma_tf32_16_16_8",
+    "runtime": 387.635,
+    "tops": 14.182
+  },
+  {
+    "gops": 419.43,
+    "name": "tcgen05_tf32_128_128_32",
+    "runtime": 3.702,
+    "tops": 113.313
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_f16_16_16_16",
+    "runtime": 194.125,
+    "tops": 56.639
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_bf16_16_16_16",
+    "runtime": 194.906,
+    "tops": 56.412
+  },
+  {
+    "gops": 838.861,
+    "name": "tcgen05_f16_128_128_64",
+    "runtime": 3.701,
+    "tops": 226.637
+  },
+  {
+    "gops": 838.861,
+    "name": "tcgen05_bf16_128_128_64",
+    "runtime": 3.702,
+    "tops": 226.609
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_s8_16_16_16",
+    "runtime": 193.747,
+    "tops": 56.75
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_s8_16_8_32",
+    "runtime": 97.479,
+    "tops": 112.795
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_e4m3_16_8_32",
+    "runtime": 64.191,
+    "tops": 171.287
+  },
+  {
+    "gops": 10995.116,
+    "name": "mma_e5m2_16_8_32",
+    "runtime": 64.191,
+    "tops": 171.288
+  },
+  {
+    "gops": 1677.722,
+    "name": "tcgen05_s8_128_128_128",
+    "runtime": 3.702,
+    "tops": 453.219
+  },
+  {
+    "gops": 1677.722,
+    "name": "tcgen05_e4m3_128_128_128",
+    "runtime": 3.7,
+    "tops": 453.387
+  },
+  {
+    "gops": 1677.722,
+    "name": "tcgen05_e5m2_128_128_128",
+    "runtime": 3.702,
+    "tops": 453.176
+  },
+  {
+    "gops": 5497.558,
+    "name": "mma_s4_8_8_32",
+    "runtime": 777.776,
+    "tops": 7.068
+  },
+  {
+    "gops": 21990.233,
+    "name": "bmma_b1_8_8_128_xor",
+    "runtime": 1848.456,
+    "tops": 11.897
+  },
+  {
+    "gops": 21990.233,
+    "name": "bmma_b1_8_8_128_and",
+    "runtime": 705.63,
+    "tops": 31.164
+  },
+  {
+    "gops": 87960.93,
+    "name": "bmma_b1_16_8_256_xor",
+    "runtime": 4231.423,
+    "tops": 20.788
+  },
+  {
+    "gops": 87960.93,
+    "name": "bmma_b1_16_8_256_and",
+    "runtime": 1235.505,
+    "tops": 71.194
+  }
 ]
