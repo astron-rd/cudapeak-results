@@ -13,17 +13,11 @@ from typing import List, Optional
 ROW_ORDER = [
     "fp32",
     "mma_tf32_16_16_8",
-    "tcgen05_tf32_128_128_32",
     "mma_bf16_16_16_16",
-    "tcgen05_bf16_128_128_64",
     "mma_f16_16_16_16",
-    "tcgen05_f16_128_128_64",
     "mma_e4m3_16_8_32",
-    "tcgen05_e4m3_128_128_128",
     "mma_e5m2_16_8_32",
-    "tcgen05_e5m2_128_128_128",
     "mma_s8_16_8_32",
-    "tcgen05_s8_128_128_128",
     "mma_s8_16_16_16",
     "mma_e2m1_16_8_64",
     "mma_e3m2_16_8_32",
@@ -32,6 +26,15 @@ ROW_ORDER = [
     "bmma_b1_8_8_128_xor",
     "bmma_b1_16_8_256_and",
     "bmma_b1_16_8_256_xor",
+]
+
+TCGEN05_ROW_ORDER = [
+    "tcgen05_tf32_128_128_32",
+    "tcgen05_bf16_128_128_64",
+    "tcgen05_f16_128_128_64",
+    "tcgen05_e4m3_128_128_128",
+    "tcgen05_e5m2_128_128_128",
+    "tcgen05_s8_128_128_128",
 ]
 
 
@@ -106,7 +109,9 @@ def compute_metrics(df: pd.DataFrame) -> pd.DataFrame:
 
     # Multiply by actual number of operations
     df[["n", "m", "k"]] = (
-        df["name"].str.extract(r"mma_\w+_(\d+)_(\d+)_(\d+)").astype("Int64")
+        df["name"]
+        .str.extract(r"(?:mma|tcgen05)_\w+_(\d+)_(\d+)_(\d+)")
+        .astype("Int64")
     )
     df["ops"] = df[["n", "m"]].product(axis=1)
     df["ops_per_cycle"] = df["ops_per_cycle"] * df["ops"]
@@ -148,7 +153,7 @@ def create_styled_table(
     return table, styled, column_order
 
 
-def generate_report(table_absolute, table_ops) -> str:
+def generate_report(table_absolute, table_ops, table_tc, table_tc_ops) -> str:
     """Generate the markdown report content."""
     return f"""
 # CUDA Peak Performance Report
@@ -175,6 +180,26 @@ Operations per cycle, showing how performance scales across different data types
 <details>
 <summary><b>📊 Data table</b></summary>
 {table_ops.to_html()}
+</details>
+
+## tcgen05 absolute performance
+Measured in teraoperations per second (TOPs) for tcgen05 (UMMA) kernels. On Thor these kernels reach a much higher peak throughput than the warp-level kernels above.
+
+![tcgen05 absolute performance](tcgen05_performance.png)
+
+<details>
+<summary><b>📊 Data table</b></summary>
+{table_tc.to_html()}
+</details>
+
+## tcgen05 operations per cycle
+Operations per cycle for tcgen05 (UMMA) kernels.
+
+![tcgen05 operations per cycle](tcgen05_ops_per_cycle.png)
+
+<details>
+<summary><b>📊 Data table</b></summary>
+{table_tc_ops.to_html()}
 </details>
 
 *Report generated on {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M UTC')}*
@@ -204,20 +229,33 @@ def main():
     # Compute metrics
     df = compute_metrics(df)
 
+    # Warp-level tables exclude the tcgen05 kernels
+    df_warp = df[~df["name"].str.startswith("tcgen05")]
+
     # Create styled tables
     table_performance, table_performance_styled, column_order = create_styled_table(
-        df, "max_tops", ROW_ORDER
+        df_warp, "max_tops", ROW_ORDER
     )
     table_ops, table_ops_styled, _ = create_styled_table(
-        df, "ops_per_cycle", ROW_ORDER, column_order
+        df_warp, "ops_per_cycle", ROW_ORDER, column_order
+    )
+
+    df_tc = df[df["name"].str.startswith("tcgen05")]
+    table_tc, table_tc_styled, tc_column_order = create_styled_table(
+        df_tc, "max_tops", TCGEN05_ROW_ORDER
+    )
+    table_tc_ops, table_tc_ops_styled, _ = create_styled_table(
+        df_tc, "ops_per_cycle", TCGEN05_ROW_ORDER, tc_column_order
     )
 
     # Export styled tables as images
     dfi.export(table_performance_styled, "performance.png")
     dfi.export(table_ops_styled, "ops_per_cycle.png")
+    dfi.export(table_tc_styled, "tcgen05_performance.png")
+    dfi.export(table_tc_ops_styled, "tcgen05_ops_per_cycle.png")
 
     # Generate and save report
-    report_content = generate_report(table_performance, table_ops)
+    report_content = generate_report(table_performance, table_ops, table_tc, table_tc_ops)
 
     with open("README.md", "w") as f:
         f.write(report_content)

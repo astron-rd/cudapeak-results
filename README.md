@@ -77,21 +77,6 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>110.215085</td>
     </tr>
     <tr>
-      <th>tcgen05_tf32_128_128_32</th>
-      <td>113.32500</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
       <th>mma_bf16_16_16_16</th>
       <td>56.41300</td>
       <td>75.212588</td>
@@ -105,21 +90,6 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>256.103896</td>
       <td>359.4260</td>
       <td>440.483894</td>
-    </tr>
-    <tr>
-      <th>tcgen05_bf16_128_128_64</th>
-      <td>226.65100</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
     </tr>
     <tr>
       <th>mma_f16_16_16_16</th>
@@ -137,21 +107,6 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>440.530013</td>
     </tr>
     <tr>
-      <th>tcgen05_f16_128_128_64</th>
-      <td>226.68200</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
       <th>mma_e4m3_16_8_32</th>
       <td>171.28700</td>
       <td>0.000000</td>
@@ -165,21 +120,6 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>521.370130</td>
       <td>732.0090</td>
       <td>878.445664</td>
-    </tr>
-    <tr>
-      <th>tcgen05_e4m3_128_128_128</th>
-      <td>453.38700</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
     </tr>
     <tr>
       <th>mma_e5m2_16_8_32</th>
@@ -197,21 +137,6 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>878.438458</td>
     </tr>
     <tr>
-      <th>tcgen05_e5m2_128_128_128</th>
-      <td>453.39900</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
       <th>mma_s8_16_8_32</th>
       <td>112.79600</td>
       <td>153.317012</td>
@@ -225,21 +150,6 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
       <td>521.855844</td>
       <td>732.6910</td>
       <td>880.022351</td>
-    </tr>
-    <tr>
-      <th>tcgen05_s8_128_128_128</th>
-      <td>453.21900</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.0000</td>
-      <td>0.000000</td>
     </tr>
     <tr>
       <th>mma_s8_16_16_16</th>
@@ -437,21 +347,6 @@ Operations per cycle, showing how performance scales across different data types
       <td>65.824612</td>
     </tr>
     <tr>
-      <th>tcgen05_tf32_128_128_32</th>
-      <td>5.403757</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
       <th>mma_bf16_16_16_16</th>
       <td>688.635254</td>
       <td>257.137052</td>
@@ -465,21 +360,6 @@ Operations per cycle, showing how performance scales across different data types
       <td>257.108225</td>
       <td>257.13463</td>
       <td>263.073621</td>
-    </tr>
-    <tr>
-      <th>tcgen05_bf16_128_128_64</th>
-      <td>10.807562</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>mma_f16_16_16_16</th>
@@ -497,21 +377,6 @@ Operations per cycle, showing how performance scales across different data types
       <td>263.101165</td>
     </tr>
     <tr>
-      <th>tcgen05_f16_128_128_64</th>
-      <td>10.80904</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
       <th>mma_e4m3_16_8_32</th>
       <td>1045.452881</td>
       <td>0.0</td>
@@ -525,21 +390,6 @@ Operations per cycle, showing how performance scales across different data types
       <td>261.707359</td>
       <td>261.840912</td>
       <td>262.320467</td>
-    </tr>
-    <tr>
-      <th>tcgen05_e4m3_128_128_128</th>
-      <td>21.619177</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>mma_e5m2_16_8_32</th>
@@ -557,21 +407,6 @@ Operations per cycle, showing how performance scales across different data types
       <td>262.318315</td>
     </tr>
     <tr>
-      <th>tcgen05_e5m2_128_128_128</th>
-      <td>21.619749</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
       <th>mma_s8_16_8_32</th>
       <td>688.452148</td>
       <td>262.080363</td>
@@ -585,21 +420,6 @@ Operations per cycle, showing how performance scales across different data types
       <td>261.951169</td>
       <td>262.084865</td>
       <td>262.791296</td>
-    </tr>
-    <tr>
-      <th>tcgen05_s8_128_128_128</th>
-      <td>21.611166</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
     </tr>
     <tr>
       <th>mma_s8_16_16_16</th>
@@ -725,4 +545,98 @@ Operations per cycle, showing how performance scales across different data types
 </table>
 </details>
 
-*Report generated on 2026-11-20 09:42 UTC*
+## tcgen05 absolute performance
+Measured in teraoperations per second (TOPs) for tcgen05 (UMMA) kernels. On Thor these kernels reach a much higher peak throughput than the warp-level kernels above.
+
+![tcgen05 absolute performance](tcgen05_performance.png)
+
+<details>
+<summary><b>📊 Data table</b></summary>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>gpu</th>
+      <th>Blackwell Thor</th>
+    </tr>
+    <tr>
+      <th>name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>tcgen05_tf32_128_128_32</th>
+      <td>113.325</td>
+    </tr>
+    <tr>
+      <th>tcgen05_bf16_128_128_64</th>
+      <td>226.651</td>
+    </tr>
+    <tr>
+      <th>tcgen05_f16_128_128_64</th>
+      <td>226.682</td>
+    </tr>
+    <tr>
+      <th>tcgen05_e4m3_128_128_128</th>
+      <td>453.387</td>
+    </tr>
+    <tr>
+      <th>tcgen05_e5m2_128_128_128</th>
+      <td>453.399</td>
+    </tr>
+    <tr>
+      <th>tcgen05_s8_128_128_128</th>
+      <td>453.219</td>
+    </tr>
+  </tbody>
+</table>
+</details>
+
+## tcgen05 operations per cycle
+Operations per cycle for tcgen05 (UMMA) kernels.
+
+![tcgen05 operations per cycle](tcgen05_ops_per_cycle.png)
+
+<details>
+<summary><b>📊 Data table</b></summary>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>gpu</th>
+      <th>Blackwell Thor</th>
+    </tr>
+    <tr>
+      <th>name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>tcgen05_tf32_128_128_32</th>
+      <td>88535.15625</td>
+    </tr>
+    <tr>
+      <th>tcgen05_bf16_128_128_64</th>
+      <td>177071.09375</td>
+    </tr>
+    <tr>
+      <th>tcgen05_f16_128_128_64</th>
+      <td>177095.3125</td>
+    </tr>
+    <tr>
+      <th>tcgen05_e4m3_128_128_128</th>
+      <td>354208.59375</td>
+    </tr>
+    <tr>
+      <th>tcgen05_e5m2_128_128_128</th>
+      <td>354217.96875</td>
+    </tr>
+    <tr>
+      <th>tcgen05_s8_128_128_128</th>
+      <td>354077.34375</td>
+    </tr>
+  </tbody>
+</table>
+</details>
+
+*Report generated on 2026-11-20 09:53 UTC*
