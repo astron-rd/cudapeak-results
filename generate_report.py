@@ -104,17 +104,8 @@ def compute_metrics(df: pd.DataFrame) -> pd.DataFrame:
     # Fallback to max_frequency if frequency is NaN
     df["frequency"] = df["frequency"].fillna(df["max_frequency"])
 
-    # Compute operations per cycle
-    df["ops_per_cycle"] = df.tops / (df.mp_count * df.frequency * 1e-3)
-
-    # Multiply by actual number of operations
-    df[["n", "m", "k"]] = (
-        df["name"]
-        .str.extract(r"(?:mma|tcgen05)_\w+_(\d+)_(\d+)_(\d+)")
-        .astype("Int64")
-    )
-    df["ops"] = df[["n", "m"]].product(axis=1)
-    df["ops_per_cycle"] = df["ops_per_cycle"] * df["ops"]
+    # Operations per SM per clock cycle: TOPS to ops/s, MHz to Hz
+    df["ops_per_cycle"] = df.tops * 1e12 / (df.mp_count * df.frequency * 1e6)
 
     # Scale measured TOPS to max frequency
     df["max_tops"] = df.tops / df.frequency * df.max_frequency
@@ -172,8 +163,8 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
 {table_absolute.to_html()}
 </details>
 
-## Operations per cycle
-Operations per cycle, showing how performance scales across different data types.
+## Operations per SM per cycle
+Operations per SM per clock cycle, showing how performance scales across different data types.
 
 ![Operations per cycle](ops_per_cycle.png)
 
@@ -192,8 +183,8 @@ Measured in teraoperations per second (TOPs) for tcgen05 (UMMA) kernels. On Thor
 {table_tc.to_html()}
 </details>
 
-## tcgen05 operations per cycle
-Operations per cycle for tcgen05 (UMMA) kernels.
+## tcgen05 operations per SM per cycle
+Operations per SM per clock cycle for tcgen05 (UMMA) kernels.
 
 ![tcgen05 operations per cycle](tcgen05_ops_per_cycle.png)
 
