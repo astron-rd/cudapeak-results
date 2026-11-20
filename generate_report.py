@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt
 import os
 import pandas as pd
 import re
-from typing import List, Optional
+from PIL import Image
+from typing import List, Optional, Tuple
 
 # Constants
 ROW_ORDER = [
@@ -118,7 +119,7 @@ def create_styled_table(
     value_col: str,
     row_order: List[str],
     column_order: Optional[List[str]] = None,
-) -> pd.DataFrame:
+) -> Tuple[pd.DataFrame, "pd.io.formats.style.Styler", List[str]]:
     """Create a styled table with consistent formatting."""
     # Create pivot table
     table = (
@@ -144,10 +145,31 @@ def create_styled_table(
     return table, styled, column_order
 
 
+def export_styled_table(
+    styled, filename: str, target_width: Optional[int] = None
+) -> int:
+    """Export a styled table as a PNG, optionally on a fixed canvas width.
+
+    GitHub scales every image to the container width, so a table with few
+    rows or columns renders with larger text than a wide table. Padding
+    each export onto one shared canvas width keeps the font size equal
+    across the document. The table is centered on transparent padding.
+    Returns the final pixel width.
+    """
+    dfi.export(styled, filename, table_conversion="matplotlib")
+    with Image.open(filename) as img:
+        if target_width is None or img.width >= target_width:
+            return img.width
+        canvas = Image.new("RGBA", (target_width, img.height), (0, 0, 0, 0))
+        canvas.paste(img, ((target_width - img.width) // 2, 0))
+    canvas.save(filename)
+    return target_width
+
+
 def generate_report(table_absolute, table_ops, table_tc, table_tc_ops) -> str:
     """Generate the markdown report content."""
     return f"""
-# CUDA Peak Performance Report
+# CUDA peak performance report
 
 This auto-generated report presents benchmark results for the [cudapeak](https://github.com/astron-rd/cudapeak) FP32 and MMA synthetic performance benchmarks on various GPUs.
 
@@ -159,17 +181,17 @@ Measured in teraoperations per second (TOPs), showing raw computational throughp
 ![Absolute performance](performance.png)
 
 <details>
-<summary><b>📊 Data table</b></summary>
+<summary><b>Data table</b></summary>
 {table_absolute.to_html()}
 </details>
 
-## Operations per SM per cycle
-Operations per SM per clock cycle, showing how performance scales across different data types.
+## Operations per SM per clock cycle
+Measured in operations per SM per clock cycle, showing how performance scales across different data types.
 
-![Operations per cycle](ops_per_cycle.png)
+![Operations per SM per clock cycle](ops_per_cycle.png)
 
 <details>
-<summary><b>📊 Data table</b></summary>
+<summary><b>Data table</b></summary>
 {table_ops.to_html()}
 </details>
 
@@ -179,17 +201,17 @@ Measured in teraoperations per second (TOPs) for tcgen05 (UMMA) kernels. On Thor
 ![tcgen05 absolute performance](tcgen05_performance.png)
 
 <details>
-<summary><b>📊 Data table</b></summary>
+<summary><b>Data table</b></summary>
 {table_tc.to_html()}
 </details>
 
-## tcgen05 operations per SM per cycle
-Operations per SM per clock cycle for tcgen05 (UMMA) kernels.
+## tcgen05 operations per SM per clock cycle
+Measured in operations per SM per clock cycle for tcgen05 (UMMA) kernels.
 
-![tcgen05 operations per cycle](tcgen05_ops_per_cycle.png)
+![tcgen05 operations per SM per clock cycle](tcgen05_ops_per_cycle.png)
 
 <details>
-<summary><b>📊 Data table</b></summary>
+<summary><b>Data table</b></summary>
 {table_tc_ops.to_html()}
 </details>
 
@@ -239,14 +261,17 @@ def main():
         df_tc, "ops_per_cycle", TCGEN05_ROW_ORDER, tc_column_order
     )
 
-    # Export styled tables as images
-    dfi.export(table_performance_styled, "performance.png")
-    dfi.export(table_ops_styled, "ops_per_cycle.png")
-    dfi.export(table_tc_styled, "tcgen05_performance.png")
-    dfi.export(table_tc_ops_styled, "tcgen05_ops_per_cycle.png")
+    # Export styled tables as images. Wide and narrow tables share one
+    # canvas width so the document renders them at the same scale.
+    base_width = export_styled_table(table_performance_styled, "performance.png")
+    export_styled_table(table_ops_styled, "ops_per_cycle.png", base_width)
+    export_styled_table(table_tc_styled, "tcgen05_performance.png", base_width)
+    export_styled_table(table_tc_ops_styled, "tcgen05_ops_per_cycle.png", base_width)
 
     # Generate and save report
-    report_content = generate_report(table_performance, table_ops, table_tc, table_tc_ops)
+    report_content = generate_report(
+        table_performance, table_ops, table_tc, table_tc_ops
+    )
 
     with open("README.md", "w") as f:
         f.write(report_content)
